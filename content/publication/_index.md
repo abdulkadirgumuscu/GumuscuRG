@@ -5,6 +5,7 @@ type: landing
 
 sections:
   - block: collection
+    id: publications
     content:
       title: Publications
       filters:
