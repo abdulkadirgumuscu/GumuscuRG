@@ -1,11 +1,18 @@
 ---
 title: Publications
 
-# Listing view
-view: card
+type: landing
 
-# Optional banner image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: ''
+sections:
+  - block: collection
+    content:
+      title: Publications
+      filters:
+        folders:
+          - publication
+      count: 0
+      order: desc
+    design:
+      view: compact
+      columns: '1'
 ---
