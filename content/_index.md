@@ -11,7 +11,7 @@ sections:
         Gumuscu
         Research Group
       image:
-        filename: Logo.png
+        filename: Logo.jpg
       text: |
         <br>
         
