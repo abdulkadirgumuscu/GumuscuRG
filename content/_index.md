@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        The **Gumuscu Research Group** has been advancing applied Artificial Intelligence research, teaching and practice at Harran University since 2018, with a focus on health, agriculture and energy. We build artificial intelligence systems that make everyday life easier, safer and more efficient. Our work takes over the heavy lifting of data analysis and monitoring, so that patients, farmers and engineers can focus on what matters most.        <br>
+        The **Gumuscu Research Group** has been advancing applied Artificial Intelligence research, teaching and practice at Harran University since 2018, with a focus on health, agriculture and energy. We build artificial intelligence systems that make everyday life easier, safer and more efficient. Our work takes over the heavy lifting of data analysis and monitoring, so that patients, farmers and engineers can focus on what matters most.  
 
 The group is led by Dr. Abdülkadir Gümüşçü, Associate Professor of Electrical and Electronics Engineering at Harran University and Honorary Senior Lecturer in the Department of Bioengineering at Imperial College London. We combine machine learning, computer vision, wearable sensing and metaheuristic optimization, and we test our methods on real problems: Parkinson's disease, crop disease and planting decisions, and solar energy systems.
   
