@@ -15,7 +15,6 @@ sections:
         street: Osmanbey Campus
         city: Sanliurfa
         region: Haliliye
-        postcode: '63407'
         country: Türkiye
         country_code: TR
       coordinates:
