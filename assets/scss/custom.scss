@@ -27,13 +27,11 @@
   background: transparent;
 }
 
-/* Yayın listelerinde resim solda (haberlerde sağda kalır) */
-#publications .stream-item,
-#latest-publications .stream-item {
+/* Bütün listelerde (haberler ve yayınlar) resim solda */
+.media.stream-item {
   flex-direction: row-reverse;
 }
-#publications .stream-item .ml-3,
-#latest-publications .stream-item .ml-3 {
+.media.stream-item .ml-3 {
   margin-left: 0 !important;
   margin-right: 1.25rem;
 }
