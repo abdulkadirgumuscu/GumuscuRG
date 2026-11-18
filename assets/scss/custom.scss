@@ -3,3 +3,26 @@
   max-width: none;
   height: auto;
 }
+
+/* Ana sayfa: Latest News ve Latest Publications yan yana */
+@media (min-width: 992px) {
+  .page-body:has(#latest-news) {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 570px) minmax(0, 570px) 1fr;
+  }
+  .page-body:has(#latest-news) > * {
+    grid-column: 1 / -1;
+  }
+  .page-body:has(#latest-news) > #latest-news {
+    grid-column: 2;
+  }
+  .page-body:has(#latest-news) > #latest-publications {
+    grid-column: 3;
+  }
+}
+
+/* İki sütunun arka planı aynı renkte olsun */
+#latest-news.home-section,
+#latest-publications.home-section {
+  background: transparent;
+}
