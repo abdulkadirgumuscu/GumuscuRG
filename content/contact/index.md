@@ -12,7 +12,7 @@ sections:
         We are always happy to hear from prospective students, collaborators and industry partners. If you are interested in joining the group or working with us, please get in touch by email with a short description of your background and interests.
       email: agumuscu@harran.edu.tr
       address:  
-        street: Osmanbey Campus
+        street: Osmanbey Campus, Department of Electrical and Electronics Engineering, Faculty of Engineering, Block F
         city: Sanliurfa
         region: Haliliye
         country: Türkiye
