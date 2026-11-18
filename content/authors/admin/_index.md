@@ -1,59 +1,65 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Abdulkadir Gumuscu
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Abdulkadir
+last_name: Gumuscu
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Associate Professor of Artificial Intelligence
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: Harran University
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research focuses on machine learning, computer vision and optimization for health, agriculture and energy.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Machine Learning and Deep Learning
+  - Computer Vision and Image Processing
+  - Metaheuristic Optimization
+  - AI for Health, Agriculture and Energy
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
+    - course: PhD in Electrical and Electronics Engineering
+      institution: Harran University
+      year: 2016
+    - course: MSc in Electrical and Electronics Engineering
+      institution: Gaziantep University
       year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: BSc in Electrical and Electronics Engineering
+      institution: Inonu University
+      year: 2006
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/gcushen
+    link: 'mailto:agumuscu@harran.edu.tr'
+  - icon: graduation-cap
+    icon_pack: fas
+    link: https://akademik.yok.gov.tr/academician-details?authorGuidId=741982724C1E1F2C
+  # Fill in your own profile links and uncomment:
+  # - icon: google-scholar
+  #   icon_pack: ai
+  #   link: https://scholar.google.com/citations?user=YOUR_ID
+  # - icon: orcid
+  #   icon_pack: ai
+  #   link: https://orcid.org/0000-0000-0000-0000
+  # - icon: researchgate
+  #   icon_pack: ai
+  #   link: https://www.researchgate.net/profile/YOUR_PROFILE
+  # - icon: linkedin
+  #   icon_pack: fab
+  #   link: https://www.linkedin.com/in/YOUR_PROFILE
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -61,17 +67,16 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'agumuscu@harran.edu.tr'
 
 # Highlight the author in author lists? (true/false)
-highlight_name: false
+highlight_name: true
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
+  - Principal Investigator
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
+Abdülkadir Gümüşçü is an Associate Professor of Electrical and Electronics Engineering at Harran University and an Honorary Senior Lecturer in the Department of Bioengineering at Imperial College London. His research develops machine learning, computer vision and optimization methods for health, agriculture and energy, from Parkinson's disease diagnosis and plant disease detection to automatic inspection of solar modules. He led the TUBITAK-funded ParkiBand smart bracelet project and also serves as Deputy Manager of Sanliurfa Technopark.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
