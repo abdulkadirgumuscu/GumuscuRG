@@ -4,7 +4,7 @@
   height: auto;
 }
 
-/* Ana sayfa: Latest News ve Latest Publications yan yana */
+/* Ana sayfa: solda Latest News, sağda Latest Publications */
 @media (min-width: 992px) {
   .page-body:has(#latest-news) {
     display: grid;
@@ -25,4 +25,15 @@
 #latest-news.home-section,
 #latest-publications.home-section {
   background: transparent;
+}
+
+/* Yayın listelerinde resim solda (haberlerde sağda kalır) */
+#publications .stream-item,
+#latest-publications .stream-item {
+  flex-direction: row-reverse;
+}
+#publications .stream-item .ml-3,
+#latest-publications .stream-item .ml-3 {
+  margin-left: 0 !important;
+  margin-right: 1.25rem;
 }
