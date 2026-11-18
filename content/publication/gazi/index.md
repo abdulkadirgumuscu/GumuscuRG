@@ -2,7 +2,7 @@
 title: 'Estimation of active sperm count in spermiogram using motion detection methods'
 authors:
   - admin
-  - 'Tenekeci M.E.'
+  - 'Mehmet Emin Tenekeci'
 date: '2018-01-01'
 publishDate: '2018-01-01'
 publication_types: ['article-journal']
