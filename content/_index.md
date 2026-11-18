@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        The **Gumuscu Research Group** has been advancing applied Artificial Intelligence research, teaching and practice at Harran University since 2018, with a focus on health, agriculture and energy.
   
   - block: collection
     content:
