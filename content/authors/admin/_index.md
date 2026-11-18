@@ -47,6 +47,15 @@ social:
   - icon: graduation-cap
     icon_pack: fas
     link: https://akademik.yok.gov.tr/academician-details?authorGuidId=741982724C1E1F2C
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.co.uk/citations?user=xtYk3C4AAAAJ
+  - icon: github
+    icon_pack: fab
+    link: https://github.com//abdulkadirgumuscu
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-5948-595X
   # Fill in your own profile links and uncomment:
   # - icon: google-scholar
   #   icon_pack: ai
