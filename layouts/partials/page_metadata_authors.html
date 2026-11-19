@@ -1,0 +1,39 @@
+{{/* Display author list. Publications: "Soyad A." biçiminde. */}}
+
+{{- $taxonomy := "authors" }}
+{{ if .Param $taxonomy }}
+  {{ range $index, $value := (.GetTerms $taxonomy) }}
+    {{- /* Highlight the author's name? */ -}}
+    {{- $highlight_name := .Page.Params.highlight_name | default false -}}
+
+    {{- /* Yayınlarda adı "Soyad A.B." biçimine çevir */ -}}
+    {{- $name := .LinkTitle -}}
+    {{- if eq $.Type "publication" -}}
+      {{- $parts := split (trim $name " ") " " -}}
+      {{- $n := len $parts -}}
+      {{- if gt $n 1 -}}
+        {{- $last := index $parts (sub $n 1) -}}
+        {{- $initials := "" -}}
+        {{- range first (sub $n 1) $parts -}}
+          {{- if . -}}{{- $initials = printf "%s%s." $initials (substr . 0 1) -}}{{- end -}}
+        {{- end -}}
+        {{- $name = printf "%s %s" $last $initials -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if gt $index 0 }}, {{ end -}}
+    <span {{ if $highlight_name }}class="author-highlighted"{{end}}>
+      {{/* Effectively check the page's `_build` option as `_build` is not exposed in Hugo's Page object. */}}
+      {{- if .RelPermalink -}}
+        <a href="{{.RelPermalink}}">{{ $name }}</a>
+      {{- else -}}
+        {{ $name }}
+      {{- end -}}
+    </span>
+    {{- if isset $.Params "author_notes" -}}
+      {{- with (index $.Params.author_notes $index) -}}
+        <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="{{.}}"></i>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
