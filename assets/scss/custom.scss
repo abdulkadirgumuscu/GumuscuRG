@@ -27,11 +27,24 @@
   background: transparent;
 }
 
-/* Bütün listelerde (haberler ve yayınlar) resim solda */
-.media.stream-item {
-  flex-direction: row-reverse;
-}
-.media.stream-item .ml-3 {
-  margin-left: 0 !important;
+/* Listelerde resim solda, yazıyla arasında boşluk */
+.media.stream-item .stream-image {
   margin-right: 1.25rem;
+}
+
+/* Ana sayfada yazı resmin altından da devam etsin */
+#latest-news .media.stream-item,
+#latest-publications .media.stream-item {
+  display: block;
+}
+#latest-news .stream-item .stream-image,
+#latest-publications .stream-item .stream-image {
+  float: left;
+  margin: 0.4rem 1.25rem 0.5rem 0;
+}
+#latest-news .stream-item::after,
+#latest-publications .stream-item::after {
+  content: "";
+  display: table;
+  clear: both;
 }
