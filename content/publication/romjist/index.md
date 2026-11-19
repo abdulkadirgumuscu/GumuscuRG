@@ -1,7 +1,7 @@
 ---
 title: 'Diagnosis of Parkinson''s Disease Using Spiral Test Based on Pattern Recognition'
 authors:
-  - 'Gerger M.'
+  - 'Mustafa Gerger'
   - admin
 date: '2022-01-01'
 publishDate: '2022-01-01'
