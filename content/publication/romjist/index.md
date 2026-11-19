@@ -14,7 +14,6 @@ tags:
   - 'Parkinson''s Disease'
 featured: false
 url_pdf: ''
-url_code: 'https://www.researchgate.net/publication/359710965_Diagnosis_of_Parkinson's_Disease_Using_Spiral_Test_Based_on_Pattern_Recognition'
+url_code: ''
 url_dataset: ''
 ---
-
