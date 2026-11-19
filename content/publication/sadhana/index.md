@@ -1,10 +1,10 @@
 ---
 title: 'Using chaos enhanced hybrid firefly particle swarm optimization algorithm for solving continuous optimization problems'
 authors:
-  - 'Aydilek Ibrahim Berkan'
-  - 'Karacizmeli Izzet Hakan'
-  - 'Tenekeci Mehmet Emin'
-  - 'Kaya Serkan'
+  - 'Ibrahim Berkan Aydilek'
+  - 'Izzet Hakan Karacizmeli'
+  - 'Mehmet Emin Tenekeci'
+  - 'Serkan Kaya'
   - admin
 date: '2021-01-01'
 publishDate: '2021-01-01'
