@@ -48,3 +48,8 @@
   display: table;
   clear: both;
 }
+/* Haber özetleri de resmin altından devam etsin */
+#latest-news .stream-item .article-style,
+#latest-publications .stream-item .article-style {
+  overflow: visible;
+}
