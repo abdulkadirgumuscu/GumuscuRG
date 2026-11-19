@@ -1,11 +1,11 @@
 ---
 title: 'Solution for flow shop scheduling problems using chaotic hybrid firefly and particle swarm optimization algorithm with improved local search'
 authors:
-  - 'Kaya Serkan'
+  - 'Serkan Kaya'
   - admin
-  - 'Aydilek Ibrahim Berkan'
-  - 'Karacizmeli Izzet Hakan'
-  - 'Tenekeci Mehmet Emin'
+  - 'Ibrahim Berkan Aydilek'
+  - 'Izzet Hakan Karacizmeli'
+  - 'Mehmet Emin Tenekeci'
 date: '2021-01-01'
 publishDate: '2021-01-01'
 publication_types: ['article-journal']
