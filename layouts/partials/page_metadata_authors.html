@@ -1,4 +1,4 @@
-{{/* Display author list. Publications: "Soyad A." biçiminde. */}}
+{{/* Display author list. Publications: "A. Soyad" biçiminde. */}}
 
 {{- $taxonomy := "authors" }}
 {{ if .Param $taxonomy }}
@@ -6,19 +6,10 @@
     {{- /* Highlight the author's name? */ -}}
     {{- $highlight_name := .Page.Params.highlight_name | default false -}}
 
-    {{- /* Yayınlarda adı "Soyad A.B." biçimine çevir */ -}}
+    {{- /* Yayınlarda adı "A. Soyad" biçimine çevir */ -}}
     {{- $name := .LinkTitle -}}
     {{- if eq $.Type "publication" -}}
-      {{- $parts := split (trim $name " ") " " -}}
-      {{- $n := len $parts -}}
-      {{- if gt $n 1 -}}
-        {{- $last := index $parts (sub $n 1) -}}
-        {{- $initials := "" -}}
-        {{- range first (sub $n 1) $parts -}}
-          {{- if . -}}{{- $initials = printf "%s%s." $initials (substr . 0 1) -}}{{- end -}}
-        {{- end -}}
-        {{- $name = printf "%s %s" $last $initials -}}
-      {{- end -}}
+      {{- $name = partial "short_author_name.html" $name -}}
     {{- end -}}
 
     {{- if gt $index 0 }}, {{ end -}}
