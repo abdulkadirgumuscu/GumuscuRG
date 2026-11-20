@@ -17,7 +17,7 @@ sections:
         
         The **Gumuscu Research Group** has been advancing applied Artificial Intelligence research, teaching and practice at Harran University since 2018, with a focus on health, agriculture and energy.
   
-  - block: collection
+    - block: collection
     id: latest-publications
     content:
       title: Latest Publications
@@ -27,7 +27,8 @@ sections:
           - publication
       order: desc
     design:
-      view: compact
+      view: showcase
+      flip_alt_rows: false
       columns: '1'
 
   - block: collection
@@ -40,7 +41,8 @@ sections:
           - post
       order: desc
     design:
-      view: compact
+      view: showcase
+      flip_alt_rows: false
       columns: '1'
 
 ---
