@@ -21,10 +21,9 @@ organizations:
 bio: He works on weekly power generation forecasting for solar power plants.
 
 interests:
-  - Solar Power Generation Forecasting
-  - Renewable Energy Integration
-  - Energy Management and Optimization
-  - Energy Storage Systems
+  - Renewable Energy
+  - Artificial Intelligence
+  - Project Design
 
 education:
   courses:
