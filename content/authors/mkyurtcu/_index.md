@@ -22,7 +22,8 @@ bio: He works on processing medical data, including 2D images and 1D ExG signals
 
 interests:
   - Medical Data Processing
-  - Machine Learning and Deep Learning
+  - Machine Learning
+  - Deep Learning
   - Hybrid ML/DL Architectures
   - Information Security
   - Python and MATLAB
