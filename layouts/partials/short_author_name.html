@@ -1,0 +1,12 @@
+{{- /* "Mustafa Yusuf Demirci" -> "M. Y. Demirci", "José M. R. Flauzino" -> "J. M. R. Flauzino" */ -}}
+{{- $parts := split (trim . " ") " " -}}
+{{- $n := len $parts -}}
+{{- $out := . -}}
+{{- if gt $n 1 -}}
+  {{- $initials := slice -}}
+  {{- range first (sub $n 1) $parts -}}
+    {{- if . -}}{{- $initials = $initials | append (printf "%s." (substr . 0 1)) -}}{{- end -}}
+  {{- end -}}
+  {{- $out = printf "%s %s" (delimit $initials " ") (index $parts (sub $n 1)) -}}
+{{- end -}}
+{{- return $out -}}
