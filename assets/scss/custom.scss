@@ -4,24 +4,7 @@
   height: auto;
 }
 
-/* Ana sayfa: solda Latest News, sağda Latest Publications */
-@media (min-width: 992px) {
-  .page-body:has(#latest-news) {
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 570px) minmax(0, 570px) 1fr;
-  }
-  .page-body:has(#latest-news) > * {
-    grid-column: 1 / -1;
-  }
-  .page-body:has(#latest-news) > #latest-news {
-    grid-column: 2;
-  }
-  .page-body:has(#latest-news) > #latest-publications {
-    grid-column: 3;
-  }
-}
-
-/* İki sütunun arka planı aynı renkte olsun */
+/* Ana sayfadaki bölümlerin arka planı aynı renkte olsun */
 #latest-news.home-section,
 #latest-publications.home-section {
   background: transparent;
@@ -32,7 +15,7 @@
   margin-right: 1.25rem;
 }
 
-/* Ana sayfada yazı resmin altından da devam etsin */
+/* Ana sayfa: resimler büyük, yazı resmin altından da devam etsin */
 #latest-news .media.stream-item,
 #latest-publications .media.stream-item {
   display: block;
@@ -40,7 +23,13 @@
 #latest-news .stream-item .stream-image,
 #latest-publications .stream-item .stream-image {
   float: left;
-  margin: 0.4rem 1.25rem 0.5rem 0;
+  margin: 0.4rem 1.75rem 0.5rem 0;
+}
+#latest-news .stream-item img,
+#latest-publications .stream-item img {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
 }
 #latest-news .stream-item::after,
 #latest-publications .stream-item::after {
@@ -48,8 +37,26 @@
   display: table;
   clear: both;
 }
-/* Haber özetleri de resmin altından devam etsin */
 #latest-news .stream-item .article-style,
 #latest-publications .stream-item .article-style {
   overflow: visible;
+}
+
+/* Telefonda resim tam genişlikte, yazı altında */
+@media (max-width: 767px) {
+  #latest-news .stream-item .stream-image,
+  #latest-publications .stream-item .stream-image {
+    float: none;
+    margin: 0 0 1rem 0;
+  }
+  #latest-news .stream-item img,
+  #latest-publications .stream-item img {
+    width: 100%;
+  }
+}
+
+/* Orijinal resimler orantılı küçülsün */
+.media.stream-item .stream-image img,
+.featured-image {
+  height: auto;
 }
