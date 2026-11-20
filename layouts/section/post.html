@@ -1,0 +1,56 @@
+{{- define "main" -}}
+<style>
+  .news-list { max-width: 1440px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  .news-item { display: grid; grid-template-columns: 820px minmax(0, 1fr); gap: 3rem; align-items: center; padding: 2rem 0; }
+  .news-item + .news-item { border-top: 1px solid rgba(127,127,127,0.15); }
+  .news-image { order: -1; }
+  .news-image img { width: 820px; max-width: 100%; height: auto; border-radius: 6px; display: block; }
+  .news-date { font-size: 0.9rem; opacity: 0.7; margin-bottom: 0.4rem; }
+  .news-title { display: block; font-size: 1.35rem; font-weight: 700; line-height: 1.35; margin-bottom: 0.6rem; }
+  .news-summary { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.8rem; }
+  .news-more { font-size: 0.9rem; font-weight: 600; }
+  @media (max-width: 1199px) {
+    .news-item { grid-template-columns: 60% minmax(0, 1fr); gap: 2rem; }
+    .news-image { order: -1; }
+  .news-image img { width: 100%; }
+  }
+  @media (max-width: 767px) {
+    .news-item { grid-template-columns: 1fr; gap: 1rem; }
+    .news-image { order: -1; }
+  }
+</style>
+
+<div class="news-list">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="article-style">{{ . }}</div>{{ end }}
+
+  {{ $paginator := .Paginate .Data.Pages }}
+  {{ range $paginator.Pages }}
+    {{ $page := . }}
+    {{ $summary := "" }}
+    {{ if .Params.summary }}{{ $summary = .Params.summary | markdownify }}{{ else }}{{ $summary = .Summary }}{{ end }}
+    {{ $img := or (.Resources.GetMatch "featured.*") (.Resources.GetMatch "*.jpg") (.Resources.GetMatch "*.png") }}
+
+    <div class="news-item">
+      {{/* RIGHT: text (image is moved to the left with CSS order) */}}
+      <div class="news-body">
+        <div class="news-date">{{ .Date | time.Format ":date_long" }}</div>
+        <a class="news-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with $summary }}<div class="news-summary article-style">{{ . }}</div>{{ end }}
+        <a class="news-more" href="{{ .RelPermalink }}">Read more →</a>
+      </div>
+
+      {{/* LEFT: large image, made at 2x for sharp retina display */}}
+      <div class="news-image">
+        {{ with $img }}
+          {{ $i := . }}
+          {{ if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $i = .Process "resize 1640x webp q92 Lanczos" }}{{ end }}
+          <a href="{{ $page.RelPermalink }}"><img src="{{ $i.RelPermalink }}" width="820" alt="{{ $page.Title }}" loading="lazy"></a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ partial "pagination" . }}
+</div>
+{{- end -}}
