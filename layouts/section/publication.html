@@ -43,10 +43,12 @@
               {{- range $i, $a := . -}}
                 {{- if $i }}, {{ end -}}
                 {{- $p := site.GetPage (printf "/authors/%s" (urlize $a)) -}}
+                {{- $full := $a -}}{{- with $p }}{{ $full = .Title }}{{ end -}}
+                {{- $short := partial "short_author_name.html" $full -}}
                 {{- if eq $a "admin" -}}
-                  <strong>{{ with $p }}{{ .Title }}{{ else }}{{ $a }}{{ end }}</strong>
+                  <strong>{{ $short }}</strong>
                 {{- else -}}
-                  {{ with $p }}{{ .Title }}{{ else }}{{ $a }}{{ end }}
+                  {{ $short }}
                 {{- end -}}
               {{- end -}}
             </div>
