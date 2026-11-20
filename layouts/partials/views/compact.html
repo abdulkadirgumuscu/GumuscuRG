@@ -29,16 +29,6 @@
 {{ end }}
 
 <div class="media stream-item view-compact">
-  {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
-  {{ with $resource }}
-  <div class="stream-image">
-      {{ $image := . }}
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy">
-      </a>
-  </div>
-  {{ end }}
   <div class="media-body">
 
     <div class="section-subheading article-title mb-0 mt-0">
@@ -82,5 +72,22 @@
     </div>
     {{ end }}
 
+  </div>
+  <div class="ml-3">
+    {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+    {{ with $resource }}
+      {{/* Display width in pixels; the file is made 3x larger so it stays sharp on retina screens. */}}
+      {{ $display := 300 }}
+      {{ $image := . }}
+      {{ if ne .MediaType.SubType "gif" }}
+        {{ $image = .Resize (printf "%dx webp q92 Lanczos" (mul $display 3)) }}
+      {{ end }}
+      {{ $h := div (mul $image.Height $display) $image.Width }}
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+        <img src="{{ $image.RelPermalink }}" width="{{ $display }}" height="{{ $h }}"
+            style="width: {{ $display }}px; max-width: 40vw; height: auto; border-radius: 6px;"
+            alt="{{ $item.Title }}" loading="lazy">
+      </a>
+    {{end}}
   </div>
 </div>
