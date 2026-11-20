@@ -60,3 +60,10 @@
 .featured-image {
   height: auto;
 }
+/* Showcase view: cut long summaries at about the height of the image */
+.view-showcase .article-style {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
