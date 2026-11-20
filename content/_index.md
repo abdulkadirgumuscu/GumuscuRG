@@ -27,7 +27,7 @@ sections:
           - publication
       order: desc
     design:
-      view: card
+      view: compact
       columns: '1'
 
   - block: collection
