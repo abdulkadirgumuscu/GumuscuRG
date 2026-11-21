@@ -91,12 +91,12 @@ Associate Professor Abdülkadir Gümüşçü leads the Gumuscu Research Group at
 
 He holds a PhD in Electrical and Electronics Engineering from Harran University and has served there as Head of the Department of Electrical and Electronics Engineering. He is also Deputy Manager of Sanliurfa Technopark and founded the technology company Antres Ltd.
 
-### Highlights
+### Awards & Recognition
 
 - Honorary Senior Lecturer, Imperial College London
-- Research published in PNAS, Expert Systems with Applications and Solar Energy Materials and Solar Cells
-- Principal investigator of the TUBITAK-funded ParkiBand smart bracelet for Parkinson's patients
 - Working group member, COST Action CA24162 on drug resistance in gastrointestinal cancers
-- Supervisor of graduate theses on plant disease detection, photovoltaic defect detection and Parkinson's diagnosis
+- Principal investigator of the TUBITAK-funded ParkiBand smart bracelet for Parkinson's patients
 - Reviewer for Scientific Reports and TUBITAK research and innovation programs
 - Turkcell Technology Leaders Scholarship
+
+Dr. Gümüşçü is the founder of the technology company Antres Ltd. Şti. and has worked to connect academic research with industry as Project Manager and, since 2023, Deputy Manager of Sanliurfa Technopark. His research is supported by organizations such as the Scientific and Technological Research Council of Türkiye (TUBITAK) and the Harran University Scientific Research Projects Fund, and he collaborates internationally through Imperial College London and the EU-funded COST network.
