@@ -15,92 +15,6 @@ role: Associate Professor of Artificial Intelligence
 # Organizations/Affiliations
 organizations:
   - name: Harran University
-    url: ''
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research focuses on machine learning, computer vision and optimization for health, agriculture and energy.
-
-interests:
-  - Machine Learning and Deep Learning
-  - Computer Vision and Image Processing
-  - Metaheuristic Optimization
-  - AI for Health, Agriculture and Energy
-
-education:
-  courses:
-    - course: PhD in Electrical and Electronics Engineering
-      institution: Harran University
-      year: 2016
-    - course: MSc in Electrical and Electronics Engineering
-      institution: Gaziantep University
-      year: 2012
-    - course: BSc in Electrical and Electronics Engineering
-      institution: Inonu University
-      year: 2006
-
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:agumuscu@harran.edu.tr'
-  - icon: graduation-cap
-    icon_pack: fas
-    link: https://akademik.yok.gov.tr/academician-details?authorGuidId=741982724C1E1F2C
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=xtYk3C4AAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com//abdulkadirgumuscu
-  - icon: orcid
-    icon_pack: ai
-    link: https://orcid.org/0000-0002-5948-595X
-  # Fill in your own profile links and uncomment:
-  # - icon: google-scholar
-  #   icon_pack: ai
-  #   link: https://scholar.google.com/citations?user=YOUR_ID
-  # - icon: orcid
-  #   icon_pack: ai
-  #   link: https://orcid.org/0000-0000-0000-0000
-  # - icon: researchgate
-  #   icon_pack: ai
-  #   link: https://www.researchgate.net/profile/YOUR_PROFILE
-  # - icon: linkedin
-  #   icon_pack: fab
-  #   link: https://www.linkedin.com/in/YOUR_PROFILE
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'agumuscu@harran.edu.tr'
-
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-  - Principal Investigators
----
-
----
-# Display name
-title: Abdulkadir Gumuscu
-
-# Full Name (for SEO)
-first_name: Abdulkadir
-last_name: Gumuscu
-
-# Is this the primary user of the site?
-superuser: true
-
-# Role/position
-role: Associate Professor of Artificial Intelligence
-
-# Organizations/Affiliations
-organizations:
-  - name: Harran University
     url: https://www.harran.edu.tr
 
 
@@ -108,7 +22,8 @@ organizations:
 bio: Associate Professor at Harran University and Honorary Senior Lecturer at Imperial College London, developing machine learning, computer vision and optimization methods for health, agriculture and energy.
 
 interests:
-  - Machine Learning and Deep Learning
+  - Machine Learning
+  - Deep Learning
   - Computer Vision and Image Processing
   - Metaheuristic Optimization
   - Feature Selection for High-Dimensional Data
@@ -185,8 +100,3 @@ He holds a PhD in Electrical and Electronics Engineering from Harran University 
 - Supervisor of graduate theses on plant disease detection, photovoltaic defect detection and Parkinson's diagnosis
 - Reviewer for Scientific Reports and TUBITAK research and innovation programs
 - Turkcell Technology Leaders Scholarship
-
-
-### Awards
-
-- Turkcell Technology Leaders Scholarship (2013)
