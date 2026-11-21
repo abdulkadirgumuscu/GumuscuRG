@@ -89,7 +89,7 @@ user_groups:
 
 Associate Professor Abdülkadir Gümüşçü leads the Gumuscu Research Group at Harran University and is an Honorary Senior Lecturer in the Department of Bioengineering at Imperial College London. His research develops machine learning, computer vision and optimization methods that make healthcare, food production and energy systems easier, safer and more efficient.
 
-He holds a PhD in Electrical and Electronics Engineering from Harran University and has served there as Head of the Department of Electrical and Electronics Engineering. He is also Deputy Manager of Sanliurfa Technopark and founded the technology company Antres Ltd.
+He holds a PhD in Electrical and Electronics Engineering from Harran University and has served there as Head of the Department of Electrical and Electronics Engineering. He is also Deputy Manager of Sanliurfa Technopark.
 
 ### Awards & Recognition
 
